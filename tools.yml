@@ -276,9 +276,6 @@ tools:
     mem: 128
   toolshed.g2.bx.psu.edu/repos/bgruening/numeric_clustering/numeric_clustering/.*:
     mem: 12
-  toolshed.g2.bx.psu.edu/repos/iuc/omark/omark/.*:
-    cores: 1
-    mem: 11.5
   toolshed.g2.bx.psu.edu/repos/bgruening/openduck_run_smd/openduck_run_smd/.*:
     gpus: 1
     cores: 1
@@ -2390,6 +2387,9 @@ tools:
     - id: tpvdb_novoplasty_small_input_rule
       if: input_size < 0.2
       mem: 8
+  toolshed.g2.bx.psu.edu/repos/iuc/omark/omark/.*:
+    cores: 1
+    mem: 11.5
   toolshed.g2.bx.psu.edu/repos/iuc/ont_fast5_api_compress_fast5/ont_fast5_api_compress_fast5/.*:
     # FIXME: needs mem
     cores: 8
