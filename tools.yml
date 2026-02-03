@@ -619,6 +619,9 @@ tools:
   toolshed.g2.bx.psu.edu/repos/galaxy-australia/metawrapmg_binning/metawrapmg_binning/.*:
     cores: 16
     mem: 64
+    env:
+      OPENBLAS_NUM_THREADS: 1
+      SINGULARITYENV_OPENBLAS_NUM_THREADS: 1
   toolshed.g2.bx.psu.edu/repos/galaxy-australia/smudgeplot/smudgeplot/.*:
     cores: min(16, max(8, 4 * round((8 + 0.4 * input_size) / 4)))
     mem: input_size*15
